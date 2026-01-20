@@ -1,0 +1,206 @@
+/* =========================
+   Global
+========================= */
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+/* =========================
+   Page Layout
+========================= */
+.page {
+  display: grid;
+  grid-template-columns: 0.9fr 1.3fr; /* LEFT smaller, RIGHT wider */
+  gap: 40px;
+  max-width: 1400px; /* wider overall */
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* =========================
+   Predictor Container
+========================= */
+.container {
+  max-width: 520px;
+  padding: 28px;
+  background: #020617;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* =========================
+   Titles
+========================= */
+h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 1.5rem;
+  color: #f8fafc;
+}
+
+/* =========================
+   Form
+========================= */
+.form label {
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  color: #cbd5f5;
+}
+
+.form input,
+.form select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #1e293b;
+  background: #020617;
+  color: #f1f5f9;
+  font-size: 0.95rem;
+}
+
+.form input::placeholder {
+  color: #64748b;
+}
+
+.form input:focus,
+.form select:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+/* =========================
+   Buttons
+========================= */
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:disabled {
+  background: #334155;
+  cursor: not-allowed;
+}
+
+/* =========================
+   Result Card
+========================= */
+.result {
+  margin-top: 26px;
+  padding: 18px;
+  border-radius: 10px;
+  background: #020617;
+  border: 1px solid #1e293b;
+}
+
+.result h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+  color: #f8fafc;
+}
+
+.result p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+/* Dynamic result colors */
+.result.benign {
+  border-left: 5px solid #22c55e;
+}
+
+.result.pathogenic {
+  border-left: 5px solid #ef4444;
+}
+
+.label-benign {
+  color: #22c55e;
+  font-weight: 600;
+}
+
+.label-pathogenic {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+/* =========================
+   Information Panel
+========================= */
+.info-panel {
+  background: #020617;
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid #1e293b;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-panel h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #f8fafc;
+}
+
+.info-panel p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #cbd5f5;
+  margin-bottom: 8px;
+}
+
+.info-panel ul {
+  padding-left: 18px;
+  margin: 8px 0;
+  color: #cbd5f5;
+}
+
+.info-panel li {
+  margin-bottom: 6px;
+}
+
+/* =========================
+   DNA Image
+========================= */
+.dna-image {
+  width: 100%;
+  max-height: 160px; /* reduced so button is visible */
+  object-fit: contain;
+  margin: 12px 0;
+  opacity: 0.9;
+}
+
+/* =========================
+   Details Button
+========================= */
+.details-btn {
+  margin-top: 12px;
+  padding: 12px;
+  width: 100%;
+  background: linear-gradient(135deg, #7c3aed, #5b21b6);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.details-btn:hover {
+  opacity: 0.9;
+}

@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+venv_tf/
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Raw data (optional)
+data/raw/
+# Datasets (DO NOT PUSH)
+data/
+*.csv
+*.txt
