@@ -19,7 +19,7 @@ function Home() {
     setResult(null);
 
     try {
-      const response = await axios.post("http://127.0.0.1:5000/predict", {
+      const response = await axios.post("https://dna-mutation-backend.onrender.com/predict", {
         chromosome,
         ref,
         alt,
