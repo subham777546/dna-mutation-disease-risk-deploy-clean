@@ -22,3 +22,4 @@ data/
 *.csv
 *.txt
 !runtime.txt
+!backend/requirements.txt
